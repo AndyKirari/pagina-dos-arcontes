@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>MinhaPrimeiraFuncao("Seja Bem-Vindo futuro arconte !");
+
+    function  MinhaPrimeiraFuncao(msg){
+        alert("A mensagem enviada foi: "+msg);
+    } 
+    
+    function Enviar() {
+
+var nome = document.getElementById("nomeid");
+
+if (nome.value != "") {
+    alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso, estaremos animados em vê-lo em breve !');
+}
+
+}
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página dos Arcontes</title>
+<header class="header">
+  <h1><b>Página dos Arcontes</b></h1>
+  <h2>Os Sete Arcontes de Teyvat</h2>
+</header>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+</style>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<ul class="menu-principal">
+  <li><a href="index.html">Página Inicial</a></li>
+  <li><a href="arcontes.html">Quem são os Arcontes ?</a></li>
+  <li><a href="cadastro.html">Seja um Arconte !</a></li>
+</ul>
+
+<ul class="menu-lateral">
+  <li><a href="galeria.html">Galeria</a></li>
+  <li><a href="nações.html">Nações</a></li>
+  <li><a href="elementos.html">Elementos</a></li>
+</ul>
+<form name="cadastro_para_ser_arconte">
+
+<h1><b>Cadastro Para Ser Arconte</b></h1>
+
+  <input type="text" id="nomeid" placeholder="Jorge da Borracharia" required="required" name="nome" /> <br>
+  <label for="nome">Nome ou Apelido</label> <br>
+
+  <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" /> <br>
+  <label for="fone">Fone</label> <br> 
+
+  <input type="email" id="emailid" placeholder="jorge_borracheiro@mail.com" name="email" /> <br> 
+  <label for="email">Email</label> <br>
+
+  <textarea placeholder="Deixe sua opnião"></textarea> <br>
+
+  <h1><b>Escolha Um Elemento:</b></h1>
+  <input type="radio" name="radio">Geo<br>
+  <input type="radio" name="radio">Cryo<br>
+  <input type="radio" name="radio">Dendro<br>
+  <input type="radio" name="radio">Electro<br>
+  <input type="radio" name="radio">Anemo<br>
+  <input type="radio" name="radio">Hydro<br>
+  <input type="radio" name="radio">Pyro<br>
+
+  <h1><b>Escolha Uma Nação:</b></h1>
+  <h2>Você pode escolher mais de uma</h2>
+  <input type="checkbox" name="checkbox">Mondstadt<br>
+  <input type="checkbox" name="checkbox">Liyue<br>
+  <input type="checkbox" name="checkbox">Inazuma<br>
+  <input type="checkbox" name="checkbox">Sumeru<br>
+  <input type="checkbox" name="checkbox">Fontaine<br>
+  <input type="checkbox" name="checkbox">Snezhnaya<br>
+  <input type="checkbox" name="checkbox">Natlan<br><br>
+
+  <h1><b>Escolha o Arconte:</b></h1>
+         <select>
+            <option>Venti</option>
+            <option>Zhongli</option>
+            <option>Raiden Shogun</option>
+            <option>Nahida</option>
+         </select><br>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" /> <br>
+  <h2><b>Essa página é um projeto de um módulo de HTML, esta página de cadastro é apenas ficção !</b></h2>
+</form>
+</body>
+<footer><p><b>Esta página não é parceira ou filiada com a Hoyoverse. Desenvolvido Por: Andy K.</b></p></footer>
+</html>

@@ -1,0 +1,136 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%; 
+}
+.header {
+  background-color: #36bbe4;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 50px;
+  text-align: center;
+}
+ul.menu-principal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #8f8f8f;
+  }
+  ul.menu-principal li {
+    display: inline-block;
+    padding: 30px;
+  }
+  ul.menu-principal li a {
+    text-decoration: none;
+    color: #333;
+  }
+  ul.menu-principal li:hover {
+    background-color: #1f64e2;
+  }
+
+  
+  ul.menu-lateral {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(68, 68, 68);
+    position: sticky;
+    height: 800%;
+    overflow: auto;
+  }
+  ul.menu-lateral li a {
+    display: block;
+    color: #36bbe4;
+    padding: 32px 16px;
+    text-decoration: none;
+  }
+  ul.menu-lateral li a.active {
+    background-color: #797979;
+    color: rgb(129, 128, 128);
+  }
+  ul.menu-lateral li a:hover:not(.active) {
+
+    background-color: #868686;
+    color: rgb(0, 0, 0);
+  }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    
+  }
+  footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #36bbe4;
+      color: rgb(255, 255, 255);
+      text-align: center;
+  }
+
+  form{
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 15px;
+    background-color: #5ba5b8;
+    max-width: 500px;
+  }
+  h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #f88400;
+    text-shadow: 5px 5px 5px rgb(94, 65, 12);
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF00;
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: #66FFFF;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
